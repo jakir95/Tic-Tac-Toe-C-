@@ -106,89 +106,6 @@ namespace ConsoleApp2
             Console.ReadKey();
         }
 
-        //public static int TicTacToe(String Player1, String Player2)
-        //{
-
-        //    int maxTurns = 9;
-        //    int turns = 0;
-        //    int choice;
-        //    String symbol;
-        //    String playerName;
-
-        //    //String[] grid = new string[9];
-        //    ///String[] grid = { " ", " ", " ", " ", " ", " ", " ", " ", " ", };
-        //    String[] grid = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
-
-        //    //grid[0] = "1"; grid[1] = "2"; grid[2] = "3";
-        //    //grid[3] = "4"; grid[4] = "5"; grid[5] = "6";
-        //    //grid[6] = "7"; grid[7] = "8"; grid[8] = "9";
-
-        //    Console.WriteLine("\n" + Player1 + " is noughts so they will start, press enter to begin");
-        //    Console.ReadKey();
-
-        //    while (turns < maxTurns)
-        //    {
-
-        //        //clears Console
-        //        Console.Clear();
-
-        //        // prints simple grid
-        //        Console.WriteLine(DrawGrid(grid));
-
-        //        //find out whose turn it is
-        //        if (turns % 2 == 0) { playerName = Player1; }
-        //        else { playerName = Player2; }
-
-        //        //get input then check 
-        //        Console.WriteLine("It's your turn " + playerName);
-        //        Console.WriteLine("Choose your position");
-        //        choice = int.Parse(Console.ReadLine());
-        //        while (choice > 9)
-        //        {
-        //            Console.WriteLine("Whoops, That position does not exist on the grid, try again");
-        //            choice = int.Parse(Console.ReadLine());
-        //        }
-        //        int position = choice - 1;
-
-        //        while (grid[position] == "X" || grid[position] == "O")
-        //        {
-        //            Console.WriteLine("Whoops, That position has already been taken, try again");
-        //            choice = int.Parse(Console.ReadLine());
-        //            position = choice - 1;
-        //        }
-        //        if (turns % 2 == 0)
-        //        {
-        //            symbol = "O";
-        //        }
-        //        else
-        //        {
-        //            symbol = "X";
-        //        }
-
-        //        grid[position] = symbol;
-
-
-
-
-        //        //clears Console
-        //        Console.Clear();
-
-        //        // prints simple grid
-        //        Console.WriteLine(DrawGrid(grid));
-
-        //        if (MatchesCheck(grid))
-        //        {
-        //            if (turns % 2 == 0) { return 1; }
-        //            else { return 2; }
-
-        //        }
-
-        //        turns = turns + 1;
-
-        //    }
-
-        //    return 0;
-        //}
 
         public static Boolean MatchesCheck(String[] grid)
         {
@@ -250,17 +167,6 @@ namespace ConsoleApp2
 
             return board;
 
-
-            //Console.WriteLine("\n\n");
-
-            //Console.WriteLine("\t\t\t  {0} | {1} | {2}  \n", grid[0],
-            //                         grid[1], grid[2]);
-            //Console.WriteLine("\t\t\t--------------\n");
-            //Console.WriteLine("\t\t\t  {0} | {1} | {2}  \n", grid[3],
-            //                         grid[4], grid[5]);
-            //Console.WriteLine("\t\t\t--------------\n");
-            //Console.WriteLine("\t\t\t  {0} | {1} | {2}  \n\n", grid[6],
-            //                         grid[7], grid[8]);
 
 
         }
